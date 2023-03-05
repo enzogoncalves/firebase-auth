@@ -1,0 +1,175 @@
+* {
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+body {
+ font-family: sans-serif;
+ display: flex;
+ justify-content: center;
+ padding-top: 3rem;
+ height: 100vh;
+}
+
+h1 {
+ margin-bottom: 3rem;
+}
+
+.page-link {
+ text-decoration: none;
+ margin-top: 1rem;
+ align-self: center;
+ color: black;
+ font-weight: 700;
+}
+
+.page-link:hover {
+ text-decoration: underline;
+}
+
+#welcome-message {
+ margin-bottom: 2rem;
+ text-align: center;
+ font-size: 1.5rem;
+}
+
+.container {
+ display: flex;
+ flex-direction: column;
+}
+
+ul {
+ list-style-type: none;
+}
+
+ul li {
+ margin-bottom: 3rem;
+}
+
+ul li a {
+ text-decoration: none;
+ color: black;
+ font-size: 1.5rem;
+ padding: 0.5rem 0.75rem;
+ border: 1px solid black;
+ border-radius: 6px;
+ box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+ul li a:hover {
+ text-decoration: underline;
+}
+
+.form {
+ align-self: center;
+ min-width: 400px;
+ display: flex;
+ flex-direction: column;
+}
+
+.input-box {
+ display: flex;
+ flex-direction: column;
+ gap: 0.5rem;
+ margin-bottom: 1.5rem;
+}
+
+.input-box input {
+ padding: 0.5rem 0.75rem;
+ outline: none;
+ font-size: 1.05rem;
+ border-radius: 4px;
+ border: 1px solid black;
+}
+
+.input-box input:focus {
+ border: 1.5px solid rgb(31, 45, 175);
+}
+
+button[type="submit"] {
+ padding: 1rem 1.5rem;
+ background-color: rgb(31, 200, 212);
+ color: black;
+ font-size: 1.25rem;
+ border: 1px solid black;
+ border-radius: 25px;
+ margin-bottom: 1rem;
+ width: 250px;
+ align-self: center;
+ cursor: pointer;
+}
+
+#create-account-btn {
+ background-color: rgb(31, 103, 212);
+ color: white;
+}
+
+.or {
+ align-self: center;
+ position: relative;
+ font-weight: 700;
+}
+
+.or::before,
+.or::after {
+ content: "";
+ height: 2px;
+ width: 150px;
+ background-color: black;
+ position: absolute;
+ top: 50%;
+ transform: translate(0, -50%);
+}
+
+.or::before {
+ right: calc(5px + 100%);
+}
+
+.or::after {
+ left: calc(5px + 100%);
+}
+
+.icons {
+ margin-top: 1rem;
+ align-self: center;
+ display: flex;
+ gap: 1rem;
+}
+
+.icons button {
+ padding: 1rem;
+ border: 1px solid black;
+ background-color: white;
+ cursor: pointer;
+}
+
+.icons button svg {
+ font-size: 2rem;
+ color: black;
+}
+
+.icons .font-white svg {
+ color: white;
+}
+
+.icons .google {
+ background-image: linear-gradient(
+  45deg,
+  #4285f4 33%,
+  #db4437 75%,
+  #f4b400 100%
+ );
+}
+
+.icons .facebook {
+ background-color: #4267b2;
+}
+
+.icons .twitter {
+ background-color: #f5f8fa;
+}
+
+.icons .font-twitter svg {
+ color: #1da1f2;
+}

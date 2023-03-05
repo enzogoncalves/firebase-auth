@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="styles.css" />
+
+  <script
+   src="https://kit.fontawesome.com/309e31f583.js"
+   crossorigin="anonymous"
+  ></script>
+
+  <script src="index.js" type="module"></script>
+  <script src="auth.js" type="module"></script>
+ </head>
+ <body>
+  <div class="container">
+   <h1>Bem vindo! Escolha uma das ações abaixo :)</h1>
+
+   <span id="welcome-message">Você não está autenticado</span>
+
+   <div class="form">
+    <div class="input-box">
+     <label for="email">E-mail</label>
+     <input type="email" id="email" />
+    </div>
+    <div class="input-box">
+     <label for="password">Senha</label>
+     <input type="password" id="password" />
+    </div>
+    <button type="submit" id="signIn">Entrar</button>
+    <button type="submit" id="create-account-btn">Criar Nova Conta</button>
+   </div>
+   <span class="or">OU</span>
+   <div class="icons">
+    <button class="font-white google">
+     <i class="fa-brands fa-google"></i>
+    </button>
+    <button class="font-white facebook">
+     <i class="fa-brands fa-facebook"></i>
+    </button>
+    <button class="font-twitter twitter">
+     <i class="fa-brands fa-twitter"></i>
+    </button>
+    <button class="github">
+     <i class="fa-brands fa-github"></i>
+    </button>
+    <button class="anom">
+     <i class="fa-solid fa-user-secret"></i>
+    </button>
+   </div>
+   <a href="/index.html" class="page-link">Voltar para a página inicial</a>
+  </div>
+ </body>
+</html>
