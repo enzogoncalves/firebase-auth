@@ -14,11 +14,12 @@ body {
 
 h1 {
  margin-bottom: 3rem;
+ text-align: center;
 }
 
 .page-link {
  text-decoration: none;
- margin-top: 1rem;
+ margin-top: 2rem;
  align-self: center;
  color: black;
  font-weight: 700;
@@ -89,11 +90,13 @@ ul li a:hover {
 
 button[type="submit"] {
  padding: 1rem 1.5rem;
- background-color: rgb(31, 200, 212);
- color: black;
+ background-color: #0d6efd;
+ color: white;
  font-size: 1.25rem;
+ font-weight: 700;
  border: 1px solid black;
  border-radius: 25px;
+ border: none;
  margin-bottom: 1rem;
  width: 250px;
  align-self: center;
@@ -102,7 +105,6 @@ button[type="submit"] {
 
 #create-account-btn {
  background-color: rgb(31, 103, 212);
- color: white;
 }
 
 .or {
@@ -146,10 +148,6 @@ button[type="submit"] {
 
 .icons button svg {
  font-size: 2rem;
- color: black;
-}
-
-.icons .font-white svg {
  color: white;
 }
 
@@ -166,10 +164,18 @@ button[type="submit"] {
  background-color: #4267b2;
 }
 
-.icons .twitter {
- background-color: #f5f8fa;
+ul#usersList {
+ list-style-type: disc;
+ display: flex;
+ flex-direction: column;
+ margin-bottom: 1.5rem;
 }
 
-.icons .font-twitter svg {
- color: #1da1f2;
+ul#usersList li {
+ margin-bottom: 0;
+}
+
+progress {
+ height: 3rem;
+ width: 100%;
 }
