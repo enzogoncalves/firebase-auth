@@ -38,6 +38,8 @@ h1 {
 .container {
  display: flex;
  flex-direction: column;
+ margin-left: 1.5rem;
+ margin-right: 1.5rem;
 }
 
 ul {
@@ -178,4 +180,15 @@ ul#usersList li {
 progress {
  height: 3rem;
  width: 100%;
+}
+
+@media (max-width: 500px) {
+ .form {
+  min-width: 200px;
+ }
+
+ .or::before,
+ .or::after {
+  width: 100px;
+ }
 }
